@@ -1,18 +1,36 @@
-## Getting Started
+Temperature Converter (JavaFX)
+This is a simple Temperature Converter desktop application built using JavaFX. It allows users to convert temperature values between Celsius and Fahrenheit with a clean graphical interface.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Features
+Convert from Celsius to Fahrenheit and Fahrenheit to Celsius
 
-## Folder Structure
+Easy-to-use GUI interface with input field, dropdown selection, and result label
 
-The workspace contains two folders by default, where:
+Input validation to prevent non-numeric entries
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Built entirely with JavaFX (no external libraries)
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+How It Works
+Users enter a temperature value.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+They choose a conversion direction from a dropdown (ComboBox):
 
-## Dependency Management
+Celsius to Fahrenheit
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Fahrenheit to Celsius
+
+Clicking the Convert button performs the calculation and displays the result.
+
+Conversion Formulas
+Celsius to Fahrenheit:
+F = (C × 9/5) + 32
+
+Fahrenheit to Celsius:
+C = (F − 32) × 5/9
+
+Technologies Used
+Java
+
+JavaFX (for GUI components)
+
+Scene Builder (optional)

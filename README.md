@@ -6,7 +6,7 @@
 
 <hr>
 
-<h2>📁 Project Overview</h2>
+<h2>Project Overview</h2>
 
 <ul>
   <li><b>AbstractExample.java</b> – Demonstrates the use of abstract classes and methods.</li>
@@ -33,7 +33,7 @@
 
 <hr>
 
-<h2>🎯 Objectives</h2>
+<h2>Objectives</h2>
 
 <ul>
   <li>Provide practical examples to understand Java programming concepts.</li>
@@ -43,7 +43,7 @@
 
 <hr>
 
-<h2>🚀 Getting Started</h2>
+<h2></h2> Getting Started</h2>
 
 <ol>
   <li><b>Clone the repository:</b><br>
@@ -60,7 +60,7 @@
 
 <hr>
 
-<h2>📬 Feedback and Contributions</h2>
+<h2>Feedback and Contributions</h2>
 
 <p>
   Contributions are welcome! If you have ideas or improvements, feel free to fork this repository and create a pull request.<br>
@@ -70,5 +70,5 @@
 <hr>
 
 <p align="center">
-  ⭐ If you found this helpful, don't forget to star the repository!
+   If you found this helpful, don't forget to star the repository!
 </p>

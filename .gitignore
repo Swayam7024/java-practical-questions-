@@ -1,0 +1,11 @@
+# Compiled Java
+*.class
+bin/
+out/
+target/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/

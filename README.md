@@ -1,74 +1,105 @@
-<h1 align="center">📘 Java Practical Questions</h1>
+<div align="center">
 
-<p align="center">
-  <i>A collection of Java programs to reinforce programming and OOP concepts</i>
-</p>
+# ☕ Java Practical Questions
 
-<hr>
+**Self-contained Java programs covering core programming and OOP concepts, each runnable on its own**
 
-<h2>Project Overview</h2>
+![Java](https://img.shields.io/badge/Java-17%2B-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Swing](https://img.shields.io/badge/GUI-Swing%20%7C%20JavaFX-5382A1?style=for-the-badge)
+![Programs](https://img.shields.io/badge/Programs-14-blue?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-<ul>
-  <li><b>AbstractExample.java</b> – Demonstrates the use of abstract classes and methods.</li>
-  <li><b>Animal.java</b> – Illustrates inheritance and method overriding.</li>
-  <li><b>ArraySum.java</b> – Calculates the sum of elements in an array.</li>
-  <li><b>ConstructorOverloading.java</b> – Shows how constructors can be overloaded.</li>
-  <li><b>CountCharacters.java</b> – Counts characters in a string.</li>
-  <li><b>Dog.java</b> – Example of subclass and polymorphism.</li>
-  <li><b>Factorial.java</b> – Computes the factorial of a number using recursion.</li>
-  <li><b>FibonacciSeries.java</b> – Generates a Fibonacci sequence.</li>
-  <li><b>InterfaceExample.java</b> – Demonstrates the implementation of interfaces.</li>
-  <li><b>LinearSearch.java</b> – Implements the linear search algorithm.</li>
-  <li><b>LoginForm.java</b> – Simulates a simple login form.</li>
-  <li><b>MergeArrays.java</b> – Merges two arrays into one.</li>
-  <li><b>MethodOverloading.java</b> – Shows method overloading in action.</li>
-  <li><b>MethodOverriding.java</b> – Demonstrates method overriding.</li>
-  <li><b>Palindrome.java</b> – Checks for palindrome strings or numbers.</li>
-  <li><b>PrimeNumber.java</b> – Determines if a number is prime.</li>
-  <li><b>ReverseString.java</b> – Reverses a given string.</li>
-  <li><b>SortingExample.java</b> – Basic sorting algorithm demo.</li>
-  <li><b>Student.java</b> – Represents a student class with attributes.</li>
-  <li><b>SumOfDigits.java</b> – Calculates the sum of digits of a number.</li>
-</ul>
+[Programs](#-programs) · [Getting Started](#-getting-started) · [Project Structure](#-project-structure)
 
-<hr>
+</div>
 
-<h2>Objectives</h2>
+---
 
-<ul>
-  <li>Provide practical examples to understand Java programming concepts.</li>
-  <li>Serve as a reference for common programming problems and solutions.</li>
-  <li>Enhance problem-solving skills through hands-on coding practice.</li>
-</ul>
+## 📖 Overview
 
-<hr>
+A collection of Java practical programs written to practise problem solving and object-oriented programming. Each file is self-contained (helper classes are nested inside it), so you can compile and run any program on its own or compile them all together.
 
-<h2></h2> Getting Started</h2>
+## 📋 Programs
 
-<ol>
-  <li><b>Clone the repository:</b><br>
-  <code>git clone https://github.com/Swayam7024/java-practical-questions-.git</code></li><br>
+### Object-Oriented Programming
+| Program | Concept |
+|---|---|
+| [`AbstractExample.java`](AbstractExample.java) | Abstract classes and abstract methods |
+| [`InterfaceExample.java`](InterfaceExample.java) | Defining and implementing an interface |
+| [`SingleInheritance.java`](SingleInheritance.java) | Single inheritance: a child class reusing parent methods |
+| [`ConstructorOverloading.java`](ConstructorOverloading.java) | Multiple constructors with different parameters |
 
-  <li><b>Navigate to the directory:</b><br>
-  <code>cd java-practical-questions-</code></li><br>
+### Problem Solving (console input with `Scanner`)
+| Program | What it does |
+|---|---|
+| [`ArraySum.java`](ArraySum.java) | Sums the elements of an array |
+| [`CountCharacters.java`](CountCharacters.java) | Counts characters in a string |
+| [`Factorial.java`](Factorial.java) | Calculates the factorial of a number |
+| [`FibonacciSeries.java`](FibonacciSeries.java) | Prints the Fibonacci series |
+| [`LinearSearch.java`](LinearSearch.java) | Searches an array with linear search |
+| [`MergeArrays.java`](MergeArrays.java) | Merges two arrays into one |
+| [`PalindromeCheck.java`](PalindromeCheck.java) | Checks whether input is a palindrome |
+| [`ReverseNumber.java`](ReverseNumber.java) | Reverses the digits of a number |
 
-  <li><b>Compile and run:</b><br>
-  <code>javac FileName.java</code><br>
-  <code>java FileName</code><br>
-  Replace <code>FileName</code> with the desired Java file.</li>
-</ol>
+### GUI Applications
+| Program | What it does |
+|---|---|
+| [`LoginForm.java`](LoginForm.java) | Swing login window with username/password check (demo credentials `admin` / `1234`) |
+| [`TemperatureConverter/`](TemperatureConverter) | JavaFX Celsius ⇄ Fahrenheit converter with input validation ([details](TemperatureConverter/README.md)) |
 
-<hr>
+## 🚀 Getting Started
 
-<h2>Feedback and Contributions</h2>
+**Prerequisites:** JDK 17 or newer (`java -version`). The Temperature Converter also needs the [JavaFX SDK](https://openjfx.io/).
 
-<p>
-  Contributions are welcome! If you have ideas or improvements, feel free to fork this repository and create a pull request.<br>
-  For bugs or suggestions, please open an issue.
-</p>
+```bash
+git clone https://github.com/Swayam7024/java-practical-questions-.git
+cd java-practical-questions-
 
-<hr>
+# Run any single program (Java 11+ can run a source file directly)
+java Factorial.java
 
-<p align="center">
-   If you found this helpful, don't forget to star the repository!
-</p>
+# Or compile everything and run by class name
+javac -d out *.java
+java -cp out FibonacciSeries
+```
+
+**Temperature Converter (JavaFX):**
+```bash
+cd TemperatureConverter
+javac --module-path /path/to/javafx-sdk/lib --add-modules javafx.controls -d bin src/TemperatureConverter.java
+java  --module-path /path/to/javafx-sdk/lib --add-modules javafx.controls -cp bin TemperatureConverter
+```
+
+## 📁 Project Structure
+
+```
+java-practical-questions-/
+├── AbstractExample.java        # OOP examples
+├── InterfaceExample.java
+├── SingleInheritance.java
+├── ConstructorOverloading.java
+├── ArraySum.java ... ReverseNumber.java   # problem-solving programs
+├── LoginForm.java              # Swing GUI
+└── TemperatureConverter/       # JavaFX app
+    ├── src/TemperatureConverter.java
+    └── README.md
+```
+
+## 🎯 Objectives
+
+- Practise core Java syntax, control flow and arrays
+- Understand OOP: abstraction, interfaces, inheritance and constructor overloading
+- Build simple desktop GUIs with Swing and JavaFX
+
+## 🤝 Contributing
+
+Suggestions and improvements are welcome. Open an issue or submit a pull request.
+
+## 👤 Author
+
+**Swayam Khantwal**, MCA student
+[![GitHub](https://img.shields.io/badge/GitHub-Swayam7024-181717?style=flat-square&logo=github)](https://github.com/Swayam7024)
+
+## 📄 License
+
+Released under the [MIT License](LICENSE).
